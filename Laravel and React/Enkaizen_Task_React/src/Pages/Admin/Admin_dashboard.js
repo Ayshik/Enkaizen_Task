@@ -40,99 +40,29 @@ const Admin_dashboard=()=>{
                 {/* small box */}
                 <div className="small-box bg-dark">
                   <div className="inner">
-                    <h3>{/*?php echo $ad ; ?*/}<sup style={{fontSize: '20px'}} /></h3>
+                    <h3>45<sup style={{fontSize: '20px'}} /></h3>
                     <p>Total Admin</p>
                   </div>
                   <div className="icon">
                     <i className="fas fa-user-shield" />
                   </div>
-                  <a href="admin.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+                  <a href="/Admin_list" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
                 </div>
               </div>
               <div className="col-lg-3 col-6">
                 {/* small box */}
                 <div className="small-box bg-success">
                   <div className="inner">
-                    <h3>{/*?php echo $Ao ; ?*/}<sup style={{fontSize: '20px'}} /></h3>
-                    <p>Total Employees</p>
+                    <h3>12<sup style={{fontSize: '20px'}} /></h3>
+                    <p>Total Users</p>
                   </div>
                   <div className="icon">
                     <i className="fas fa-users" />
                   </div>
-                  <a href="employee.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+                  <a href="/Admin_user_list" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
                 </div>
               </div>
-              {/* ./col */}
-              <div className="col-lg-3 col-6">
-                {/* small box */}
-                <div className="small-box bg-warning">
-                  <div className="inner">
-                    <h3>{/*?php echo $lt ; ?*/}</h3>
-                    <p>Total Laptops</p>
-                  </div>
-                  <div className="icon">
-                    <i className="fas fa-laptop" />
-                  </div>
-                  <a href="laptop.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
-                </div>
-              </div>
-              {/* ./col */}
-              <div className="col-lg-3 col-6">
-                {/* small box */}
-                <div className="small-box bg-info">
-                  <div className="inner">
-                    <h3>{/*?php echo $lnv ; ?*/}</h3>
-                    <p>Laptops In Stock</p>
-                  </div>
-                  <div className="icon">
-                    <i className="fas fa-laptop-house" />
-                  </div>
-                  <a href="inventory.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
-                </div>
-                {/* Again Smaill Boxes -*/}
-              </div>
-              {/* ./col */}
-              <div className="col-lg-3 col-6">
-                {/* small box */}
-                <div className="small-box bg-danger">
-                  <div className="inner">
-                    <h3>{/*?php echo $fal ; ?*/}<sup style={{fontSize: '20px'}} /></h3>
-                    <p>Faulty Laptops</p>
-                  </div>
-                  <div className="icon">
-                    <i className="fas fa-skull-crossbones" />
-                  </div>
-                  <a href="faulty.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
-                </div>
-              </div>
-              {/* ./col */}
-              <div className="col-lg-3 col-6">
-                {/* small box */}
-                <div className="small-box bg-primary ">
-                  <div className="inner">
-                    <h3>{/*?php echo $cus ; ?*/}</h3>
-                    <p>Customized Laptops</p>
-                  </div>
-                  <div className="icon">
-                    <i className="fas fa-tools" />
-                  </div>
-                  <a href="customize.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
-                </div>
-              </div>
-              <div className="col-lg-3 col-6">
-                <div className="small-box bg-secondary">
-                  <div className="inner">
-                    <h3>{/*?php echo $book ; ?*/}</h3>
-                    <p>Laptops are Allocated to Users</p>
-                  </div>
-                  <div className="icon">
-                    <i className="fas fa-user-tag" />
-                  </div>
-                  <a href="allocate.php" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
-                </div>
-              </div>
-              {/* Small Boxes End -*/}
-              {/* ./col */}
+             
             </div>
           </div>
           {/* /.row */}

@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { Component } from "react";
+
+import { Redirect } from "react-router-dom";
 
 const Admin_header_dashboard=()=>{
+
+  const user = JSON.parse(localStorage.getItem("user"));
+  const check = JSON.parse(localStorage.getItem("check"));
+
+  if (check.isLoggedIn=="false") {
+    return <Redirect to="/" />;
+  }
+  const logout=()=>{    
+    localStorage.clear();
+    var check= {isLoggedIn:"false"};
+    localStorage.setItem('check',JSON.stringify(check));
+    window.location.href ='/';
+ }
     return(
         <div>
         <div className="preloader flex-column justify-content-center align-items-center">
@@ -17,7 +32,7 @@ const Admin_header_dashboard=()=>{
               <a href="./index.php" className="nav-link">Home</a>
             </li>
             <li className="nav-item d-none d-sm-inline-block">
-              <a href="https://www.ipdcbd.com/" className="nav-link">Official Website</a>
+              <a href="/Admin_Dashboard" style={{color: "red",fontWeight: "bold"}} className="nav-link">Welcome {user.fullname} </a>
             </li>
           </ul>
           {/* Right navbar links */}
@@ -56,7 +71,7 @@ const Admin_header_dashboard=()=>{
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" data-widget="Logout" href="logout.php" role="button">
+              <a className="nav-link" data-widget="Logout" onClick={logout} role="button">
                 <i className="fas fa-sign-out-alt" />
               </a>
             </li>

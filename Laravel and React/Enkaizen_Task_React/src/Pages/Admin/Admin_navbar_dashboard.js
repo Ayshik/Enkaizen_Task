@@ -29,7 +29,7 @@ const Admin_navbar_dashboard=()=>{
            {/* Add icons to the links using the .nav-icon class
           with font-awesome or any other icon font library */}
            <li className="nav-item menu-open">
-             <a href="index.php" className="nav-link <?php echo $dashboard ?>">
+             <a href="/Admin_dashboard" className="nav-link active">
                <i className="nav-icon fas fa-tachometer-alt" />
                <p>
                  Dashboard
@@ -37,77 +37,22 @@ const Admin_navbar_dashboard=()=>{
              </a>
            </li>
            <li className="nav-item">
-             <a href="admin.php" className="nav-link <?php echo $admin ?>">
+             <a href="/Admin_list" className="nav-link <?php echo $admin ?>">
                <i className="nav-icon fas fa-user-shield" />
                <p>
-                 Admin
+                 Admin List
                </p>
              </a>
            </li>
            <li className="nav-item">
-             <a href="employee.php" className="nav-link <?php echo $employee ?>">
+             <a href="/Admin_user_list" className="nav-link <?php echo $employee ?>">
                <i className="nav-icon fas fa-users" />
                <p>
-                 Employee List
+                 User List
                </p>
              </a>
            </li>
-           <li className="nav-item">
-             <a href="laptop.php" className="nav-link <?php echo $laptop ?>">
-               <i className="nav-icon fas fa-laptop" />
-               <p>
-                 Laptop List
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="inventory.php" className="nav-link <?php echo $inventory ?>">
-               <i className="nav-icon fas fa-laptop-house" />
-               <p>
-                 Laptop in Stock
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="allocate.php" className="nav-link <?php echo $allocate ?>">
-               <i className="nav-icon fas fa-user-tag" />
-               <p>
-                 Allocated to Users
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="faulty.php" className="nav-link <?php echo $faulty ?>">
-               <i className="nav-icon fas fa-skull-crossbones" />
-               <p>
-                 Faulty Laptops
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="customize.php" className="nav-link <?php echo $customize ?>">
-               <i className="nav-icon fas fa-tools" />
-               <p>
-                 Customized Laptops
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="invoice.php" className="nav-link <?php echo $invoice ?>">
-               <i className="nav-icon fas fa-file-invoice-dollar" />
-               <p>
-                 Invoice
-               </p>
-             </a>
-           </li>
-           <li className="nav-item">
-             <a href="history.php" className="nav-link <?php echo $history ?>">
-               <i className="nav-icon fas fa-history" />
-               <p>
-                 User History
-               </p>
-             </a>
-           </li>
+          
          </ul></nav>
        {/* /.sidebar-menu */}
      </div>
